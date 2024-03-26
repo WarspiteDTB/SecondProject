@@ -7,12 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!--<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>-->
+    <!--<style>
+     #map {
+        height: 400px;
+      }
+      #markerForm {
+        width: 300px;
+      }
+      #issue {
+        width: 300px;
+      }
+     </style>-->
+
 </head>
 <div class="wrapper">
     <header>
         <div class="header">
             <a href="#" class="header_logo">
-                <img src="/img/logo.svg" alt="">
+                <img src="img/logo.svg" alt="">
                 <h1 class="text header_tittle">Городская среда</h1>
             </a>
             <div class="header_text">
@@ -22,25 +36,26 @@
             </div>
             <div class="header_image">
                 <a href="#">
-                    <img src="/img/notification.svg" alt="" class="notification">
+                    <img src="img/notification.svg" alt="" class="notification">
                 </a>
                 <a href="#">
-                    <img src="/img/profile.svg" alt="" class="profile">
+                    <img src="img/profile.svg" alt="" class="profile">
                 </a>
             </div>
         </div>
     </header>
 
     <body>
+    <div class="container">
         <div class="menu">
             <div class="text menu_tittle first">Панель управления</div>
-            <div class="text menu_tittle bord"><img src="/img/application.svg" alt="" class="menu_img"><a
+            <div class="text menu_tittle bord"><img src="img/application.svg" alt="" class="menu_img"><a
                     href="#"></a>Все заявки</div>
-            <div class="text menu_tittle bord"><img src="/img/news.svg" alt="" class="menu_img"><a href="#">Новости</a>
+            <div class="text menu_tittle bord"><img src="img/news.svg" alt="" class="menu_img"><a href="#">Новости</a>
             </div>
-            <div class="text menu_tittle bord"><img src="/img/administration.svg" alt="" class="menu_img"><a
+            <div class="text menu_tittle bord"><img src="img/administration.svg" alt="" class="menu_img"><a
                     href="#">Администрация</a></div>
-            <div class="text menu_tittle bord"><img src="/img/support.svg" alt="" class="menu_img"><a
+            <div class="text menu_tittle bord"><img src="img/support.svg" alt="" class="menu_img"><a
                     href="#">Поддержка</a></div>
             <!-- <h1 class="text menu_tittle">Панель управления</h1>
             <ul>
@@ -51,15 +66,58 @@
             </ul> -->
         </div>
         <div class="content"></div>
+        <div class="map">
+        <div id="map"></div>
+        <!--<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+        var map = L.map('map').setView([47.2095, 38.9359], 13); // Координаты Таганрога
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        }).addTo(map);
+        </script>-->
+
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            var map = L.map('map').setView([47.2095, 38.9359], 13); // Координаты Таганрога
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+    
+            var popup = L.popup();
+    
+            function onMapRightClick(e) {
+                popup
+                    .setLatLng(e.latlng)
+                    .setContent('<form id="markerForm"><label for="issue">Информация о проблеме:</label><br><textarea id="issue" name="issue" rows="4" cols="50"></textarea><br><input type="file" id="fileUpload" name="fileUpload"><br><button type="button" onclick="saveMarker()">Сохранить</button></form>')
+                    .openOn(map);
+            }
+    
+            map.on('contextmenu', onMapRightClick);
+    
+            function saveMarker() {
+                var formData = new FormData(document.getElementById("markerForm"));
+                formData.append("latitude", popup.getLatLng().lat);
+                formData.append("longitude", popup.getLatLng().lng);
+    
+                // Send formData to server using AJAX or perform other actions
+                console.log("Form data:", formData);
+                
+                // Close popup after saving
+                map.closePopup();
+            }
+        </script>
+
+        </div>
+    </div>
     </body>
 
     <footer>
         <div class="footer_wrapper">
             <div class="footer_text text">Мы в социальных сетях</div>
             <div class="footer_item">
-                <a href="#"><img src="/img/vk.png" alt="" class="footer_item_img"></a>
-                <a href="#"><img src="/img/Instagram.png" alt="" class="footer_item_img"></a>
-                <a href="#"><img src="/img/tg.png" alt="" class="footer_item_img"></a>
+                <a href="#"><img src="img/vk.png" alt="" class="footer_item_img"></a>
+                <a href="#"><img src="img/Instagram.png" alt="" class="footer_item_img"></a>
+                <a href="#"><img src="img/tg.png" alt="" class="footer_item_img"></a>
             </div>
         </div>
     </footer>
