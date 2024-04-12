@@ -89,21 +89,27 @@ body {
     margin-top: 10px;
 }
 
-.map {
-   /* flex: 2 1 240px;*/
+.content {
     flex-grow: 10;
-    height: 100px;
-    width: 100px;
 }
 
+/*.map {
+   flex: 2 1 240px;
+    flex-grow: 10;
+    height: 100vh;
+    width: 100vh;
+} */
+
 #map{
-    height: 400px;
+    height: 71vh;
+    width:  161vh;
 }
 
 #markerForm {
     width: 300px;
   }
   
+
 #issue {
     width: 300px;
   }
