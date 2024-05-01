@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_2.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<div class="wrapper">
+    <header>
+        <div class="header">
+            <a href="#" class="header_logo">
+                <img src="img/logo.svg" alt="">
+                <h1 class="text header_tittle">Городская среда</h1>
+            </a>
+            <div class="header_text">
+
+                <h4 class="text header_subtittle">Сервис по организации взаимодействия <br>
+                    между гражданами и органами власти</h4>
+            </div>
+            <div class="header_image">
+                <a href="#">
+                    <img src="img/notification.svg" alt="" class="notification">
+                </a>
+                <a href="#">
+                    <img src="img/profile.svg" alt="" class="profile">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <body>
+    <div class="container">
+        <div class="menu">
+            <div class="text menu_tittle first">Панель управления</div>
+            <div class="text menu_tittle bord"><img src="img/application.svg" alt="" class="menu_img"><a
+                    href="#"></a><a href="Applications.html">Все заявки</a></div>
+            <div class="text menu_tittle bord"><img src="img/news.svg" alt="" class="menu_img"><a href="#">Новости</a>
+            </div>
+            <div class="text menu_tittle bord"><img src="img/administration.svg" alt="" class="menu_img"><a
+                    href="users.html">Администрация</a></div>
+            <div class="text menu_tittle bord active"><img src="img/support.svg" alt="" class="menu_img"><a
+                    href="chat.html">Поддержка</a></div> 
+        </div>
+        <div class="content chat">
+		<div class="line"></div>
+
+		<div class="message">
+			<div class='user'></div>
+			<div class='text'>
+				Сервис "Городская среда" привествует Вас!<br><br>
+				Наш чат-бот проконсультирует Вас по любому вопросу.
+				Также, вы можете связаться с оператором, в среднем, ожидание ответа занимает от 5 до 10 минут.
+			</div>
+		</div>
+
+		<div class="message">
+			<div class='text answer'>&nbsp;</div>
+		</div>
+
+		<div class="new_massage">
+			<input type='text' value='' placeholder='Напишите сообщение' class='pole'>
+			<input type='submit' value='' class='but'>
+		</div>
+        </div>
+    </div>
+    </body>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footer_text text">Мы в социальных сетях</div>
+            <div class="footer_item">
+                <a href="#"><img src="img/vk.png" alt="" class="footer_item_img"></a>
+                <a href="#"><img src="img/Instagram.png" alt="" class="footer_item_img"></a>
+                <a href="#"><img src="img/tg.png" alt="" class="footer_item_img"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</html>

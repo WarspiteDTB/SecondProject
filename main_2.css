@@ -1,0 +1,189 @@
+input::placeholder {
+  color: #fff;
+}
+
+
+.chat {
+	background:#d8d8d8;
+	padding:20px 18%;
+}
+.chat .line {
+	margin: 20px 0;
+	height:1px;
+	border-top:#999999 1px solid;
+}
+.chat .message {
+	margin: 20px 0;
+	display:flex;
+}
+.chat .message .user {
+	background:#626262;
+	width:5vw;
+	height:5vw;
+	border-radius:50%;
+	margin-right:5%;
+}
+.chat .message .text {
+	width:50%;
+	background:#999999;
+	padding:20px;
+	border-radius:20px;
+}
+.chat .message .text.answer {
+	margin-left:auto;
+	background:#b0b0b0;
+}
+
+.chat .new_massage {
+	margin:20px 0;
+	position:relative;
+}
+.chat .new_massage .pole {
+	box-sizing: border-box;
+	border:0;
+	background:#999999;
+	border-radius:20px;
+	padding:15px 20px;
+	width:100%;
+	color:#fff;
+}
+.chat .new_massage .but {
+	position:absolute;
+	background:url(img/send.png) no-repeat center center;
+	background-size:25px;
+	border:0;
+	width:30px;
+	height:35px;
+	top:5px;
+	right:15px;
+	cursor: pointer;
+}
+
+.alert {
+	position:relative;
+	align-items: stretch;
+	text-align:center;
+	background:url(img/peoples.png) no-repeat 25% 30%;
+	background-size:auto 30vh;
+}
+.alert .message {
+	position:absolute;
+	top: 15vh;
+	width:100%;
+}
+.alert .text {
+	background: #363232;
+	display: inline-block;
+	padding:10px;
+}
+.alert H2 {
+	color:#60b641;
+	margin-bottom:10px;
+	font-size:150%;
+}
+.alert .close {
+	position:absolute;
+	top: 5vh;
+	right:15%;
+	width:25px;
+	height:25px;
+	background:url(img/close.png) no-repeat center center;
+	background-size:75%;
+	cursor: pointer;
+}
+
+.users {
+	padding:20px 0;
+}
+.users .user {
+	float:left;
+	padding:20px 4%;
+	display:flex;
+	align-items: center;
+}
+.users .avatar {
+	width:7vw;
+	height:7vw;
+	background:url(img/avatar.png) no-repeat center center;
+	background-size:100%;
+	border-radius:50%;
+}
+.users .text {
+	padding-left:20px;
+	color:#d8d8d8;
+}
+.users .text SPAN {
+	display:block;
+	color:#438937;
+	font-size:115%;
+	margin-bottom:5px;
+}
+.users .link {
+	clear:both;
+	text-align:center;
+	padding:40px;
+}
+.users .link A {
+	text-decoration: underline;
+	color:#d8d8d8;
+	font-size:115%;
+}
+
+
+.form .win {
+	min-height: 70%;
+	background:#605858 url(img/peoples.png) no-repeat 5% 50%;
+	background-size:auto 70%;
+	margin:20px;
+	border-radius:20px;
+	padding:30px;
+	position:relative;
+	display:flex;
+	justify-content: right;
+	align-items: center;
+}
+.form .text {
+	width:40%;
+	margin-left:35%;
+	text-align:center;
+}
+.form .text H2 {
+	font-size:160%;
+	line-height:120%;
+	margin-bottom:10px;
+}
+.form .order {
+	width:35%;
+	margin:0 5% 0 15%;
+	text-align:center;
+}
+.form .order .pole {
+	box-sizing: border-box;
+	width:100%;
+	background:none;
+	color:#fff;
+	border:#444 1px solid;
+	padding:15px 20px;
+	border-radius:20px;
+	margin-bottom:20px;
+}
+.form .order .but {
+	box-sizing: border-box;
+	width: 100%;
+	background:#36aaff;
+	color:#fff;
+	border:0;
+	padding: 15px 20px;
+	border-radius:20px;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.form .soglasie {
+	font-size:85%;
+}
+.form .soglasie A {
+	color:#36aaff;
+}
+.form .end {
+	clear:both;
+}
