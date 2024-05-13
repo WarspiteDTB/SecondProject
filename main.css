@@ -59,15 +59,12 @@ body {
 
 .container {
     display: flex;
-    width: 100%;
-    min-height: 60vh;
 }
 
 .menu {
-    flex-grow: 0.5;
     width: 300px;
     height: 100%;
-    font-size: 30px; 
+    font-size: 30px;
     /*flex: 1 2 100px;*/
 }
 
@@ -177,4 +174,38 @@ footer {
 
 .footer_item_img {
     margin-left: 20px;
+}
+
+
+
+
+
+
+/*
+NEWS.CSS
+*/
+
+
+.news_num{
+    max-width: 80%;
+    margin-left: 5%;
+    margin-top: 5%; 
+}
+
+.news_t{
+    display: flex;
+}
+
+.news_tittle{
+    margin-top: 3%;
+    
+}
+
+.news_subtittle{
+    margin-top: 3%; 
+}
+
+.news_subtittle img{
+    width: 80%;
+    
 }

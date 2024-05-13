@@ -172,50 +172,6 @@ li{
     background-image: url(/img/support.svg);
 } */
 
-.app{
-    position: relative;
-    margin-left: 3%;
-    margin-top: 30px;
-    max-width: 650px;
-    height: 170px;
-    border: 1px solid white;
-    border-radius: 55px;
-    word-wrap:break-word;
-}
-
-.app_num{
-    margin-top: 10px;
-    margin-left: 10px;
-    display: flex;
-}
-
-.app_num_tittle {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.app_num_subtittle{ 
-    position: relative;
-    width: 85%;
-    margin-left: 40px;
-    margin-top: 5px;
-}
-
-.appavatar{
-    width: 100px;
-    border-radius: 50%;
-}
-
-.appgall{
-    width: 20px;    
-    height: 20px;
-    position: absolute;
-    right: 40px;
-}
-
-
-
 footer {
     position: absolute;
     left: 0;

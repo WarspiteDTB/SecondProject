@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Applications.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="main_2.css">
+    <link rel="stylesheet" href="/Applications.css">
 </head>
 <div class="wrapper">
     <header>
         <div class="header">
             <a href="/index.html" class="header_logo">
                 <img src="img/logo.svg" alt="">
-                <h1 class="text header_tittle">Городская среда</h1>
+                <h1 class="text header_tittle"> Городская среда</h1>
             </a>
             <div class="header_text">
 
@@ -34,8 +34,8 @@
     </header>
 
     <body>
-        <div class="main_content">
-            <div class="menu">
+        <div class="container">
+            <div class="menu content_nf">
                 <div class="text menu_tittle first">Панель управления</div>
                 <div class="text menu_tittle bord"><img src="img/application.svg" alt="" class="menu_img"><a
                         href="/Applications.html"></a><a href="Applications.html">Все заявки</a></div>
@@ -46,35 +46,29 @@
                 <div class="text menu_tittle bord"><img src="img/support.svg" alt="" class="menu_img"><a
                         href="/chat.html">Поддержка</a></div> 
             </div>
-            <div class="content">
-                <div class="content_tittle">
-                    <button class="content_but"><a href="/Applications.html">Все заявки</a></button>
-                    <button class="content_but"><a href="/MyApplications.html">Мои заявки</a></button>
-                </div>
-                <div class="content_search">
-                    <input class="searching" name="s" placeholder="Искать здесь..." type="search">
+            <div>
+                <div class="content">
+                    <input class="searching" name="s" placeholder="О чем хотите рассказать" type="search">
                     <button type="submit">Поиск</button>
-                </div>
-                <div class="app">
-                    <div class="app_num">
-                        <div class="app_num_img"><img class="appavatar" src="/img/avatar.png" alt=""></div>
-                        <div class="app_num_tittle">
-                            <div>
-                                <h1 class="text">Иван Иванов</h1>
-                            </div>
-                            <div>
-                                <img class="appgall" src="/img/appgall.png" alt="">
-                            </div>
+                    <div class="news_num">
+                        <div class="news_t">
+                            <img src="/img/photo.png" alt="">
+                            <h1 class="text">Городская Среда<br>сегодня в 13:34</h1>
                         </div>
-                    </div>
-                    <div class="app_num_subtittle text">
-                        <h3>Добрый день! На улице Фрунзе на дороге расположена большая яма! Просьба устранить проблему!
-                            Прикрепила ...</h3>
+                        <div class="news_tittle text">Уважаемые жители города Таганрога! Заявка №156983 выполнена!
+                            Благодарим Вас за бдительность и внимательность. Общими усилиями сделаем наш город уютным,
+                            чистым и красивым!
+                        </div>
+                        <div class="news_subtittle">
+                            <img src="/img/news.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </body>
+
     <footer>
         <div class="footer_wrapper">
             <div class="footer_text text">Мы в социальных сетях</div>
