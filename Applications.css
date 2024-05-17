@@ -1,11 +1,13 @@
 html,
 body {
     height: 100%;
+    font-family: "Mulish", sans-serif;
 }
 
 .wrapper {
     position: relative;
     min-height: 100%;
+    font-family: "Mulish", sans-serif;
 }
 
 a {
@@ -24,6 +26,8 @@ a {
 
 .text {
     color: white;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .header_logo {
@@ -77,6 +81,21 @@ body {
     border-radius: 20px;
 }
 
+
+#news {
+    overflow: auto;
+    max-height: 1000px; 
+  }
+
+.content #submit-button {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    padding-top: 4px;
+    background-color: rgb(9, 170, 58);
+    color: white;
+}
+
 .content_tittle{
     margin-top: 3%;
     margin-left: 3%;
@@ -93,6 +112,8 @@ body {
 
 .searching{
     background: transparent;
+    color: white;
+    padding-left: 10px;
     width: 80%;
     height: 30px;
     margin-left: 3%;
@@ -116,8 +137,17 @@ body {
 }
 
 .bord {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 8px; 
     background-color: #4F4B4B;
     margin-top: 10px;
+    border-radius: 8px; 
+    transition: opacity 0.3s ease-in-out;
+}
+.bord:hover{
+    opacity: 0.8;
 }
 
 .form_application{
@@ -179,7 +209,7 @@ li{
     max-width: 650px;
     height: 170px;
     border: 1px solid white;
-    border-radius: 55px;
+    border-radius: 35px;
     word-wrap:break-word;
 }
 
@@ -198,12 +228,13 @@ li{
 .app_num_subtittle{ 
     position: relative;
     width: 85%;
-    margin-left: 40px;
+    margin-left: 70px;
     margin-top: 5px;
 }
 
 .appavatar{
-    width: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 

@@ -1,11 +1,13 @@
 html,
 body {
     height: 100%;
+    font-family: "Mulish", sans-serif;
 }
 
 .wrapper {
     position: relative;
     min-height: 100%;
+    font-family: "Mulish", sans-serif;
 }
 
 a {
@@ -77,6 +79,22 @@ body {
     border-radius: 20px;
 }
 
+.content #submit-button {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    padding-top: 4px;
+    background-color: rgb(9, 170, 58);
+    color: white;
+}
+
+ #submit-button {
+    /* ... остальные стили ... */
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
 .content_tittle{
     margin-top: 3%;
     margin-left: 3%;
@@ -116,8 +134,13 @@ body {
 }
 
 .bord {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
     background-color: #4F4B4B;
     margin-top: 10px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .form_application{

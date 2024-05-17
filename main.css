@@ -1,11 +1,13 @@
 html,
 body {
     height: 100%;
+    font-family: "Mulish", sans-serif;
 }
 
 .wrapper {
     position: relative;
     min-height: 100%;
+    font-family: "Mulish", sans-serif;
 }
 
 a {
@@ -65,6 +67,7 @@ body {
     width: 300px;
     height: 100%;
     font-size: 30px;
+    padding-right: 10px;
     /*flex: 1 2 100px;*/
 }
 
@@ -82,9 +85,18 @@ body {
     padding-right: 10px;
 }
 .bord {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
     background-color: #4F4B4B;
     margin-top: 10px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
 }
+.bord:hover{
+    opacity: 0.8;
+}
+
 .menu_tittle.active {
     background-color: #999999;
 }

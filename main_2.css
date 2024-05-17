@@ -93,7 +93,15 @@ input::placeholder {
   }
   
   .users {
-	  padding:20px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding: 20px 0;
+	justify-content: center;
+  }
+  .users > div:nth-child(4) {
+	grid-row: 1 / span 1;
+	grid-column: 2;
   }
   .users .user {
 	  float:left;
@@ -119,14 +127,25 @@ input::placeholder {
 	  margin-bottom:5px;
   }
   .users .link {
+
 	  clear:both;
 	  text-align:center;
 	  padding:40px;
   }
   .users .link A {
-	  text-decoration: underline;
-	  color:#d8d8d8;
+	  text-decoration: none;
+	  color:#ffffff;
 	  font-size:115%;
+	  background-color: #50ac40;
+	  padding: 12px 24px;
+	  border-radius: 24px;
+	  transition: opacity 0.3s ease-in-out;
+  }
+
+
+
+  .users .link A:hover {
+	opacity: 0.9;
   }
   
   
@@ -141,7 +160,11 @@ input::placeholder {
 	  display:flex;
 	  justify-content: right;
 	  align-items: center;
+
+	
   }
+
+
   .form .text {
 	  width:40%;
 	  margin-left:35%;
@@ -180,6 +203,7 @@ input::placeholder {
   }
   .form .soglasie {
 	  font-size:85%;
+	  color: white;
   }
   .form .soglasie A {
 	  color:#36aaff;
