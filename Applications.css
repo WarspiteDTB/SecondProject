@@ -114,7 +114,7 @@ body {
     background: transparent;
     color: white;
     padding-left: 10px;
-    width: 80%;
+    width: 89%;
     height: 30px;
     margin-left: 3%;
     margin-top: 3%;
@@ -169,39 +169,7 @@ body {
 #issue {
     width: 300px;
   }
-/* .menu{
-    width: 300px;
-}
-
-.menu_tittle{
-    padding-left: 25px;
-    font-size: 30px;
-}
-
-li{
-    list-style: none;
-    background-repeat: no-repeat;
-    padding-left: 25px;
-    font-size: 30px;
-    margin-top: 10px;
-}
-
-.one{
-    background-image: url(/img/application.svg);
-}
-
-.two{
-    background-image: url(/img/news.svg);
-}
-
-.three{
-    background-image: url(/img/administration.svg);
-}
-
-.four{
-    background-image: url(/img/support.svg);
-} */
-
+  
 .app{
     position: relative;
     margin-left: 3%;
@@ -274,4 +242,25 @@ footer {
 
 .footer_item_img {
     margin-left: 20px;
+}
+
+/*button_search
+*/
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-top: 3%;
+}
+
+.search_button i {
+    pointer-events: none;
+}
+
+.search_button:hover {
+    color: #ccc;
 }
