@@ -81,7 +81,6 @@ body {
     border-radius: 20px;
 }
 
-
 #news {
     overflow: auto;
     max-height: 1000px; 
@@ -92,6 +91,7 @@ body {
     padding: 5px;
     border-radius: 4px;
     padding-top: 4px;
+    margin-left: 3px;
     background-color: rgb(9, 170, 58);
     color: white;
 }
@@ -121,6 +121,19 @@ body {
     border-radius: 20px;
     border: 1px solid white;
 }
+
+.searching_n{
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    width: 81%;
+    height: 30px;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
 .first {
     padding-left: 30px;
 }
